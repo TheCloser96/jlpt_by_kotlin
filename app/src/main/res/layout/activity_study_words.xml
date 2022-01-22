@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--특정 Day를 클릭할 경우 해당 난이도와 Day와 관련한 단어들이 나열되는 레이아웃-->
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".StudyWordsActivity">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerWords"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

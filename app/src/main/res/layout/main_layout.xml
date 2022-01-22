@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--소속 혹은 관련된 Activity: MainActivity-->
+<!--activity_main의 toolbar와 메인 컨텐츠모음-->
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/mainLayout">
+
+    <!--main_nav_toolbar 추가-->
+    <include
+        layout="@layout/main_nav_toolbar"
+        android:id="@+id/toolbar"/>
+
+    <!--activity_main의 본 화면의 컨텐츠 및 주요내용들을 이곳에서 작성-->
+    <LinearLayout
+        android:id="@+id/contents"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!--사용자 최근상태 요약 레이아웃-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            android:paddingHorizontal="40dp"
+            android:paddingVertical="40dp"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <!--최근 공부한 JLPT레벨, 해당 레벨의 day를 표시-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1">
+                    <TextView
+                        android:id="@+id/recentStudy"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="@string/recentStudy" />
+                    <TextView
+                        android:id="@+id/recentStudyLevel"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="JLPT Level" />
+                    <TextView
+                        android:id="@+id/recentStudyDay"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="Day" />
+                </LinearLayout>
+                <!--최근 테스트한 JLPT레벨, 해당 레벨의 점수를 표시-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1">
+                    <TextView
+                        android:id="@+id/recentTest"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="@string/recentTest" />
+                    <TextView
+                        android:id="@+id/recentTestLevel"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="JLPT Level" />
+                    <TextView
+                        android:id="@+id/recentTestScore"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="Score" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!--메인 화면 컨텐츠 레이아웃-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            android:layout_weight="3">
+
+            <!--컨텐츠 관련 버튼 모음 레이아웃-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical">
+<!--                <Button-->
+<!--                    android:id="@+id/attendanceCheckBtn"-->
+<!--                    android:layout_width="200dp"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_gravity="center"-->
+<!--                    android:layout_marginVertical="20dp"-->
+<!--                    android:text="@string/attendanceCheck" />-->
+                <Button
+                    android:id="@+id/JLPTWordsBtn"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginVertical="20dp"
+                    android:backgroundTint="@color/magenta_pink"
+                    android:text="@string/JLPTWords" />
+                <Button
+                    android:id="@+id/JLPTTestBtn"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginVertical="20dp"
+                    android:backgroundTint="@color/cyan_blue"
+                    android:text="@string/JLPTTest" />
+                <Button
+                    android:id="@+id/translationBtn"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginVertical="20dp"
+                    android:backgroundTint="@color/green"
+                    android:text="@string/translation" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!--공백 레이아웃-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.5">
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

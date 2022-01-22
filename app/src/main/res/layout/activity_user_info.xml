@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--사용자 프로필 조회 및 변경이 가능한 레이아웃-->
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".UserInfoActivity">
+
+
+    <!--사용자의 프로필 사진 변경 및 조회 구간-->
+    <LinearLayout
+        android:id="@+id/userProfile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/profileImgPart" />
+
+        <ImageView
+            android:id="@+id/userProfileImg"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/ic_person" />
+
+        <Button
+            android:id="@+id/setDefaultImgBtn"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/setDefaultImg">
+        </Button>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="7dp"
+            android:gravity="center"
+            android:text="@string/howToUseImg" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:background="#D3D3D3" />
+    </LinearLayout>
+
+    <!--사용자 프로필과 게시글 관련 옵션 모음-->
+    <LinearLayout
+        android:id="@+id/userInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/profileInfo" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/uid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/uid" />
+            <TextView
+                android:id="@+id/userUid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="0.5dp"
+                android:background="#D3D3D3" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/nickName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/nickName" />
+
+            <EditText
+                android:id="@+id/editNickName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/defaultNickName"
+                android:inputType="textPersonName" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="0.5dp"
+                android:background="#D3D3D3" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/email" />
+            <TextView
+                android:id="@+id/userEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:background="#D3D3D3" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <!--사용자 프로필과 게시글 관련 옵션 모음-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/userBoard" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/board"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/modifyBoard" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="0.5dp"
+                android:background="#D3D3D3" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/QAndA"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/modifyQAndA" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:background="#D3D3D3" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+</LinearLayout>

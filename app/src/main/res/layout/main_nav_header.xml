@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--소속 혹은 관련된 Activity: MainActivity-->
+<!--activity_main의 우측 nav바의 개인 프로필 표시 항목-->
+
+<!--nav의 헤더의 콘텐츠가 잘려서 보여지는것 방지차원으로 조정한 레이아웃-->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:paddingTop="40dp"
+    android:paddingBottom="20dp"
+    android:background="@color/cardview_shadow_start_color"
+    android:orientation="vertical"
+    android:id="@+id/navHeader">
+
+    <!--nav의 헤더의 콘텐츠가 균형있게 보여지기 위해 작성된 레이아웃-->
+    <LinearLayout
+        android:id="@+id/standardLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="20dp">
+
+        <!--nav의 헤더 콘텐츠가 기록된 레이아웃-->
+        <LinearLayout
+            android:id="@+id/profileLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/profileImg"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/ic_person" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/welcome" />
+
+                <TextView
+                    android:id="@+id/userNick"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="USER" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

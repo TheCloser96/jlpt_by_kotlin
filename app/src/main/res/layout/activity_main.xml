@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--toolbar와 메인 컨텐츠모음이 저장된 레이아웃과 nav바 구성요소인 헤더와 메뉴들을 모아놓은 레이아웃-->
+
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:id="@+id/mainNav">
+
+    <!--툴바와 본 화면에 보여질 컨텐츠들이 기록된 레이아웃을 삽입-->
+    <include
+        layout="@layout/main_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/appbarAndContents"/>
+
+    <!--nav바를 구성하는 nav의 header와 menu를 삽입-->
+    <com.google.android.material.navigation.NavigationView
+        app:headerLayout="@layout/main_nav_header"
+        app:menu="@menu/main_nav_menu"
+        android:layout_gravity="left"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:id="@+id/headerAndMenu" />
+
+</androidx.drawerlayout.widget.DrawerLayout>

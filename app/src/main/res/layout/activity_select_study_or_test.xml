@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--activity_main으로 부터 넘어오는 레이아웃-->
+<!--단어 학습과 단어 체크 버튼들이 서로 공유하는 레이아웃-->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SelectStudyOrTestActivity">
+
+    <!--레벨 선택 버튼 레이아웃-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingVertical="100dp"
+        android:paddingHorizontal="80dp"
+        android:gravity="center">
+        <Button
+            android:id="@+id/jlptN1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="20dp"
+            android:backgroundTint="@color/jlptN1"
+            android:text="N1" />
+        <Button
+            android:id="@+id/jlptN2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="20dp"
+            android:backgroundTint="@color/jlptN2"
+            android:text="N2" />
+        <Button
+            android:id="@+id/jlptN3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="20dp"
+            android:backgroundTint="@color/jlptN3"
+            android:text="N3" />
+        <Button
+            android:id="@+id/jlptN4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="20dp"
+            android:backgroundTint="@color/jlptN4"
+            android:text="N4" />
+        <Button
+            android:id="@+id/jlptN5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="20dp"
+            android:backgroundTint="@color/jlptN5"
+            android:text="N5" />
+    </LinearLayout>
+
+</LinearLayout>

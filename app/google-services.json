@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1048010598975",
+    "firebase_url": "https://jlptcommunitybykotlin-default-rtdb.firebaseio.com",
+    "project_id": "jlptcommunitybykotlin",
+    "storage_bucket": "jlptcommunitybykotlin.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1048010598975:android:b3d812a002fba3776c668a",
+        "android_client_info": {
+          "package_name": "com.example.jlptcommunity"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1048010598975-6nr3la2rjiaqc0hme4m4255kl128mu3j.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.jlptcommunity",
+            "certificate_hash": "ced4b1d6aa1b724a232260aa99ba5862ed8a20d2"
+          }
+        },
+        {
+          "client_id": "1048010598975-k7883hv9f2bvq3c8h9fv8navnqumcbnq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCfK_AFBgHYL1lAn6qDnJg_lif7RkexUtc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1048010598975-k7883hv9f2bvq3c8h9fv8navnqumcbnq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

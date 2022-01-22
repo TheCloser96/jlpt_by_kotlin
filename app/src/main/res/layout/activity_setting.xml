@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--어플리케이션의 설정들이 모여있는 레이아웃-->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SettingActivity"
+    android:orientation="vertical">
+
+    <!--타이틀-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textSize="40sp"
+            android:text="@string/setting" />
+    </LinearLayout>
+    <!--경계선(번역할 영역과 번역될 영역을 나누는 역할)-->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="#D3D3D3" />
+
+
+
+    <!--설정 메뉴 모음-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="9"
+        android:orientation="vertical">
+
+        <!--로그아웃-->
+        <TextView
+            android:id="@+id/logout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="@string/logout" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#D3D3D3" />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

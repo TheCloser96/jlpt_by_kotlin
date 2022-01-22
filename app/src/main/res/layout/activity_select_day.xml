@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--JLPT 난이도에 따라 Day의 개수와 색상이 정해져서 나오는 레이아웃-->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SelectDayActivity">
+
+    <!--리사이클러 뷰에서 사용자가 선택한 레벨에 맞춰서 Day의 색상과 개수가 맞춰서 제공-->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerDays"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>

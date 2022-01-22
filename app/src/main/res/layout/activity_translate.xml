@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--사용자가 입력한 텍스트에 따라서 즉각적으로 번역하여 텍스트를 보여주는 레이아웃-->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".TranslateActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:orientation="horizontal"
+        android:layout_gravity="center">
+        <TextView
+            android:id="@+id/beTranslate"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textSize="22sp"
+            android:gravity="right|center_vertical"
+            android:text="@string/languageToChange" />
+        <ImageButton
+            android:id="@+id/toggle"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            app:srcCompat="@drawable/translate_swap" />
+        <TextView
+            android:id="@+id/translated"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textSize="22sp"
+            android:gravity="left|center_vertical"
+            android:text="@string/changedLanguage" />
+    </LinearLayout>
+
+
+    <!--경계선(문장들이 나타나는 뷰들의 영역을 나누는 역할)-->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#D3D3D3" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="30"
+        android:orientation="vertical">
+        <EditText
+            android:id="@+id/beTranslateStr"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:hint="@string/sentence"
+            android:textSize="23sp"
+            android:ems="10"
+            android:gravity="start|top"
+            android:padding="12dp"
+            android:inputType="textMultiLine"
+            android:background="@android:color/transparent"/>
+        <!--경계선(번역할 영역과 번역될 영역을 나누는 역할)-->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#D3D3D3" />
+        <TextView
+            android:id="@+id/translatedStr"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:textSize="23sp"
+            android:ems="10"
+            android:gravity="start|top"
+            android:padding="12dp"
+            android:inputType="textMultiLine"
+            android:background="@android:color/transparent"/>
+    </LinearLayout>
+
+</LinearLayout>

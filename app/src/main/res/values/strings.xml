@@ -1,0 +1,70 @@
+<resources>
+    <string name="app_name">JLPTCommunity</string>
+
+
+    <!--main_layout.xml-->
+    <!--activity_main의 본 화면의 사용자 최근상태-->
+    <string name="recentStudy">최근 학습</string>
+    <string name="recentTest">최근 테스트</string>
+    <!--activity_main의 본 화면의 컨텐츠-->
+    <string name="attendanceCheck">출석 체크</string>
+    <string name="JLPTWords">단어 학습</string>
+    <string name="JLPTTest">단어 체크</string>
+    <string name="translation">미니 번역기</string>
+
+
+    <!--main_nav_menu.xml-->
+    <!--activity_main의 nav의 menu-->
+    <!--<string name="notice">공지사항</string>-->
+    <string name="community">커뮤니티</string>
+    <string name="qAndA">Q&amp;A</string>
+    <string name="settings">설정</string>
+
+
+    <!--main_nav_header.xml-->
+    <string name="welcome">환영합니다</string>
+
+
+    <!--activity_translate.xml-->
+    <!--번역기 전체적인 UI 관련-->
+    <!--초기값-->
+    <string name="languageToChange">한국어</string>
+    <string name="changedLanguage">일본어</string>
+    <!--문장 입력 뷰-->
+    <string name="sentence">번역할 문장을 기재하세요(5000자 이내)</string>
+
+
+    <!--activity_setting.xml-->
+    <!--설정 타이틀-->
+    <string name="setting">설정</string>
+    <!--로그아웃-->
+    <string name="logout">로그아웃</string>
+
+
+    <!--activity_user_info.xml-->
+    <!--이미지 관련-->
+    <string name="profileImgPart">사용자 이미지</string>
+    <string name="setDefaultImg">이미지 초기화</string>
+    <string name="howToUseImg">이미지를 터치하여 변경할 수 있습니다</string>
+    <!--사용자 프로필 및 게시글 관련-->
+    <string name="profileInfo">사용자 정보</string>
+    <string name="uid">사용자 고유 아이디</string>
+    <string name="nickName">닉네임 (닉네임을 터치하여 변경이 가능)</string>
+    <string name="defaultNickName">EX)ㅇㅇ</string>
+    <string name="email">사용자 이메일</string>
+    <string name="userBoard">작성글 관리모음</string>
+    <string name="modifyBoard">게시글 관리</string>
+    <string name="modifyQAndA">Q&amp;A 관리</string>
+
+
+    <!--dialog_loading.xml-->
+    <string name="loadingMsg">잠시 기다려주세요</string>
+
+
+    <!--activity_community.xml-->
+    <string name="notice">공지사항</string>
+    <string name="board">자유 게시판</string>
+    <string name="floatActionButtonDescription">게시물 작성</string>
+    <string name="pageMove">조회하기</string>
+
+</resources>
